@@ -1,8 +1,52 @@
-h1 {
-  font-family: "Noto Serif KR", serif;
-  font-weight: 700;
-  font-size: 80px;
+:root {
+  --special-font: "Josefin Sans", sans-serif;
+  --plain-font: "Raleway", sans-serif;
 }
-p {
-  font-family: "Raleway", sans-serif;
+body {
+  font-family: var(--plain-font);
+  text-align: center;
+  background-color: #f6eee3;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--special-font);
+}
+.intro {
+  margin: 40px 60px;
+}
+.intro h1 {
+  font-size: 60px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.intro h2 {
+  font-size: 35px;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+.intro h3 {
+  font-family: var(--plain-font);
+  font-weight: 700;
+}
+.btn-contact {
+  border: 3px black;
+  border-style: solid none;
+  color: black;
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: all 200ms ease-in-out;
+  display: flex;
+  justify-content: center;
+}
+.btn-contact:hover {
+  color: #f6eee3;
+  background: black;
+  transform: scale(1.1);
 }
