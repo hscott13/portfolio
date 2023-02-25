@@ -4,7 +4,6 @@
 }
 body {
   font-family: var(--plain-font);
-  text-align: center;
   background-color: #f6eee3;
 }
 
@@ -15,9 +14,15 @@ h4,
 h5,
 h6 {
   font-family: var(--special-font);
+  text-align: center;
 }
 .intro {
-  margin: 40px 60px;
+  margin: 40px 150px 0px;
+  display: flex;
+
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
 .intro h1 {
   font-size: 60px;
@@ -33,6 +38,11 @@ h6 {
   font-family: var(--plain-font);
   font-weight: 700;
 }
+.intro p {
+  display: flex;
+  text-align: center;
+  width: 100%;
+}
 .btn-contact {
   border: 3px black;
   border-style: solid none;
@@ -42,11 +52,27 @@ h6 {
   text-decoration: none;
   padding: 10px 20px;
   transition: all 200ms ease-in-out;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
-.btn-contact:hover {
+
+a:hover {
   color: #f6eee3;
   background: black;
-  transform: scale(1.1);
+}
+.container h2 {
+  font-size: 40px;
+}
+.btn-page {
+  border: 5px solid black;
+  color: black;
+  font-weight: 700;
+  font-size: 40px;
+  text-decoration: none;
+  padding: 10px 20px;
+  text-align: center;
+  width: 150px;
+  transition: all 200ms ease-in-out;
+}
+
+@media (max-width: 600px) {
 }
