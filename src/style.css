@@ -91,7 +91,12 @@ main a:hover {
   margin-top: 40px;
   font-size: 60px;
 }
-
+.profile-picture {
+  width: 250px;
+  border-radius: 50%;
+  float: left;
+  padding: 10px;
+}
 .bio h2 {
   font-size: 40px;
   font-weight: 300;
@@ -118,7 +123,8 @@ main a:hover {
 .statement {
   margin: 25px 0px 25px;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 16px;
+  text-align: justify;
 }
 .skills li {
   padding: 3px 0px;
@@ -142,6 +148,14 @@ main a:hover {
     display: none;
   }
 
+  .profile-picture {
+    width: 150px;
+
+    float: none;
+  }
+  .statement {
+    font-size: 16px;
+  }
   .bio-info {
     flex-direction: column;
     display: flex;
@@ -149,6 +163,7 @@ main a:hover {
   }
   .bio h3 {
     text-align: center;
+    margin-bottom: 10px;
   }
   .bio ul {
     list-style-type: none;
