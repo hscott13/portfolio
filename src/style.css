@@ -105,7 +105,7 @@ main a:hover {
   margin-bottom: 25px;
 }
 .code h2 {
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 200;
   text-decoration: underline;
   text-decoration-thickness: 2px;
@@ -120,7 +120,7 @@ main a:hover {
   color: #f6eee3;
 }
 .video h2 {
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 200;
   text-decoration: underline;
   text-decoration-thickness: 2px;
@@ -132,12 +132,17 @@ main a:hover {
   font-weight: 600;
   text-transform: uppercase;
   text-align: start;
+  font-size: 30px;
+}
+.project p {
+  font-size: 18px;
 }
 .project-info a {
   opacity: 75%;
   padding: 0px 10px;
   text-transform: uppercase;
   font-weight: 700;
+  font-size: 18px;
   text-align: center;
 }
 .project-info a:hover {
