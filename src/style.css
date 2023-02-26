@@ -229,7 +229,16 @@ main a:hover {
   background: #212529;
   color: #f6eee3;
 }
-
+.contact-details a {
+  color: #f6eee3;
+}
+.contact-details .text {
+  font-size: 25px;
+  font-weight: 300;
+}
+.contact-details .icons {
+  font-size: 30px;
+}
 @media (max-width: 850px) {
   .profile-picture {
     width: 150px;
@@ -267,13 +276,16 @@ main a:hover {
   }
   .bio h3 {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   .bio ul {
     list-style-type: none;
     padding: 0px;
   }
   .work-description {
+    display: none;
+  }
+  .contact-details .text {
     display: none;
   }
 }
