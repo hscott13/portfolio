@@ -2,9 +2,17 @@
   --special-font: "Josefin Sans", sans-serif;
   --plain-font: "Raleway", sans-serif;
 }
+.navbar {
+  color: #f6eee3;
+}
+.navbar-brand {
+  font-family: var(--special-font);
+  font-weight: 600;
+}
 body {
   font-family: var(--plain-font);
   background-color: #f6eee3;
+  height: 100%;
 }
 
 h1,
@@ -16,6 +24,7 @@ h6 {
   font-family: var(--special-font);
   text-align: center;
 }
+
 .intro {
   margin: 40px 150px 0px;
   display: flex;
@@ -41,7 +50,7 @@ h6 {
 .intro p {
   display: flex;
   text-align: center;
-  width: 100%;
+  max-width: 800px;
 }
 .btn-contact {
   border: 3px black;
@@ -55,11 +64,12 @@ h6 {
   text-align: center;
 }
 
-a:hover {
+main a:hover {
   color: #f6eee3;
   background: black;
 }
-.container h2 {
+
+.homepage-content h2 {
   font-size: 40px;
 }
 .btn-page {
@@ -73,9 +83,36 @@ a:hover {
   width: 150px;
   transition: all 200ms ease-in-out;
 }
+.homepage-content img {
+  width: 400px;
+  padding: 5px;
+}
 
 @media (max-width: 600px) {
   .intro {
     margin: 40px 10px 0px;
   }
+
+  .homepage-content img {
+    display: none;
+  }
+}
+
+footer {
+  background-color: #212529;
+
+  margin-top: 40px;
+  padding: 10px;
+  font-size: 20px;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+footer a {
+  color: #f6eee3;
+}
+footer a:hover {
+  background-color: none;
+  color: #f6eee3;
 }

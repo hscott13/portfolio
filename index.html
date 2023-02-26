@@ -31,32 +31,104 @@
     <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
-    <div class="intro">
-      <h2>Hi there, I'm</h2>
-      <h1>HEATHER SCOTT</h1>
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">H.S</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="/work.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Work
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li>
+                  <a class="dropdown-item" href="/work.html#code">Code</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/work.html#video">Video</a>
+                </li>
+              </ul>
+            </li>
 
-      <h3>Creative, based in Glasgow</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero sem,
-        egestas at dolor a, posuere sagittis augue. Curabitur euismod eros nec
-        hendrerit facilisis. Donec venenatis neque sed fermentum luctus.
-        Vestibulum vulputate eu mi sed ultrices. In ac luctus nunc.
-      </p>
-      <a href="#" class="btn-contact">GET IN TOUCH</a>
-    </div>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="intro">
+        <h2>Hi there, I'm</h2>
+        <h1>HEATHER SCOTT</h1>
 
-    <div class="container">
-      <div class="row">
-        <h2 class="mt-5">What would you like to see?</h2>
+        <h3>Creative, based in Glasgow</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero
+          sem, egestas at dolor a, posuere sagittis augue. Curabitur euismod
+          eros nec hendrerit facilisis. Donec venenatis neque sed fermentum
+          luctus. Vestibulum vulputate eu mi sed ultrices. In ac luctus nunc.
+        </p>
+        <a href="#" class="btn-contact">GET IN TOUCH</a>
       </div>
-      <div class="row mt-3 gx-5">
-        <div class="col d-flex justify-content-end">
-          <a href="/work.html" class="btn-page">code</a>
+
+      <div class="container w-50 homepage-content">
+        <div class="row">
+          <h2 class="mt-5">What would you like to see?</h2>
         </div>
-        <div class="col d-flex justify-content-start">
-          <a href="/work.html" class="btn-page">video</a>
+        <div class="row mx-5 g-5 d-flex">
+          <div class="col d-flex justify-content-center">
+            <a href="/work.html" class="btn-page">code</a>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <a href="/work.html" class="btn-page">video</a>
+          </div>
         </div>
       </div>
-    </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col d-flex justify-content-center">
+            <a href="#" title="Connect on LinkedIn"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <a href="#" title="See my GitHub"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <a href="#" title="Follow my Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
