@@ -91,6 +91,24 @@ main a:hover {
   margin-top: 40px;
   font-size: 60px;
 }
+.project-picture {
+  width: 400px;
+  position: relative;
+  top: 30px;
+}
+.btn-launch-project {
+  font-family: var(--special-font);
+  font-size: 40px;
+  font-weight: 800;
+  position: relative;
+  bottom: 150px;
+  padding: 61.5px 111.5px;
+  color: rgba(0, 0, 0, 0);
+}
+.btn-launch-project:hover {
+  background: rgba(255, 255, 255, 0.75);
+}
+
 .profile-picture {
   width: 250px;
   border-radius: 50%;
