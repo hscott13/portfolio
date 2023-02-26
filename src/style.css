@@ -89,30 +89,40 @@ main a:hover {
 
 .title {
   margin-top: 40px;
+  font-size: 60px;
 }
+
 .bio h2 {
   font-size: 40px;
   font-weight: 300;
+  margin-bottom: 20px;
 }
 .bio h3 {
   text-align: left;
   text-decoration: underline;
 }
 .experience ul {
-  padding: 0px;
+  padding: 5px;
 }
 .experience li {
   list-style-type: none;
 }
 .experience h4 {
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 25px;
+  font-weight: 600;
 }
 .experience h5 {
   font-weight: 300;
 }
 .statement {
-  margin: 15px 0px;
+  margin: 25px 0px 25px;
+  font-weight: 600;
+  font-size: 20px;
+}
+.skills li {
+  padding: 3px 0px;
+  font-size: 18px;
   font-weight: 500;
 }
 .description {
@@ -130,6 +140,19 @@ main a:hover {
 
   .homepage-content img {
     display: none;
+  }
+
+  .bio-info {
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+  }
+  .bio h3 {
+    text-align: center;
+  }
+  .bio ul {
+    list-style-type: none;
+    padding: 0px;
   }
   .work-description {
     display: none;
