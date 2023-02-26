@@ -222,6 +222,13 @@ main a:hover {
   list-style-type: circle;
   font-size: 14px;
 }
+.contact-details {
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  background: #212529;
+  color: #f6eee3;
+}
 
 @media (max-width: 850px) {
   .profile-picture {
