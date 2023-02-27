@@ -175,6 +175,15 @@ main a:hover {
   text-shadow: 1px 1px 1px gray;
 }
 
+.code-link {
+  font-size: 20px;
+  padding-top: 20px;
+  font-weight: 300;
+}
+.code-link a {
+  color: #212529;
+}
+
 .profile-picture {
   width: 250px;
   border-radius: 50%;
@@ -240,6 +249,26 @@ main a:hover {
 .contact-details .icons {
   font-size: 30px;
 }
+.contact-details .icons a:hover {
+  transform: scale(1.5);
+}
+footer {
+  background-color: #212529;
+
+  padding: 10px;
+  font-size: 20px;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+footer a {
+  color: #f6eee3;
+}
+footer a:hover {
+  background-color: none;
+  color: #f6eee3;
+}
 @media (max-width: 850px) {
   .profile-picture {
     width: 150px;
@@ -289,22 +318,4 @@ main a:hover {
   .contact-details .text {
     display: none;
   }
-}
-
-footer {
-  background-color: #212529;
-
-  padding: 10px;
-  font-size: 20px;
-  position: relative;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-}
-footer a {
-  color: #f6eee3;
-}
-footer a:hover {
-  background-color: none;
-  color: #f6eee3;
 }
