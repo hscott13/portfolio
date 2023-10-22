@@ -101,9 +101,7 @@ main a:hover {
   text-decoration: none;
   font-weight: 600;
 }
-.code {
-  margin-bottom: 25px;
-}
+
 .code h2 {
   font-size: 60px;
   font-weight: 200;
@@ -112,10 +110,9 @@ main a:hover {
   text-underline-offset: 5px;
 }
 
-.video {
+.code {
   display: block;
-  padding-top: 15px;
-  padding-bottom: 25px;
+  padding-top: 25px;
   background: #212529;
   color: #f6eee3;
 }
@@ -148,10 +145,10 @@ main a:hover {
 .project-info a:hover {
   opacity: 100%;
 }
-.code .project-info a {
+.video .project-info a {
   color: #212529;
 }
-.video .project-info a {
+.code .project-info a {
   color: #f6eee3;
 }
 
@@ -178,10 +175,12 @@ main a:hover {
 .code-link {
   font-size: 20px;
   padding-top: 20px;
+  padding-bottom: 20px;
   font-weight: 300;
+  margin-bottom: 0%;
 }
 .code-link a {
-  color: #212529;
+  color: #f6eee3;
 }
 
 .profile-picture {
