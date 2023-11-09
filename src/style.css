@@ -13,3 +13,11 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+
+.gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: fit-content;
+  height: 1000px;
+}
