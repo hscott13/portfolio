@@ -15,9 +15,25 @@ body {
 }
 
 .gradient {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+
   position: absolute;
   top: 0;
   left: 0;
-  width: fit-content;
+}
+
+.intro {
+  position: relative;
   height: 1000px;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.header-text {
+  position: relative;
 }
