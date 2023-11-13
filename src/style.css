@@ -37,3 +37,13 @@ body {
 .header-text {
   position: relative;
 }
+
+.experience {
+  height: 700px;
+  overflow: scroll;
+}
+
+.projects > img {
+  max-height: 250px;
+  width: auto;
+}
