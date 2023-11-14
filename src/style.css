@@ -1,3 +1,8 @@
+:root {
+  --light: #fdfefe;
+  --dark: ##252525;
+}
+
 h1,
 h2,
 h3,
@@ -12,13 +17,15 @@ body {
   font-family: poppins, sans-serif;
   font-weight: 400;
   font-style: normal;
+  color: var(--dark);
 }
-
+.navbar {
+  background-color: var(--light);
+}
 .gradient {
   object-fit: cover;
   height: 100%;
   width: 100%;
-
   position: absolute;
   top: 0;
   left: 0;
@@ -32,7 +39,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: var(--light);
 }
 .header-text {
   position: relative;
@@ -46,4 +53,17 @@ body {
 .projects > img {
   max-height: 250px;
   width: auto;
+}
+
+.project-info > h3 {
+  font-size: 100px;
+  -webkit-text-stroke-color: var(--light);
+  -webkit-text-stroke-width: 2px;
+}
+.carousel-item {
+  transition: transform 4s ease, opacity 1s ease-out;
+}
+.carousel-item img {
+  height: 500px;
+  object-fit: cover;
 }

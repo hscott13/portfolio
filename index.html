@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="/">H.S</a>
         <button
@@ -78,29 +78,26 @@
     
     <div >
       
-      <div class="container w-75 projects">
-        <video  height="700" autoplay="autoplay" loop>
+      <div class="container projects d-flex flex-column">
+        <video  class="justify-content-center" height="700px" autoplay="autoplay" loop>
                     <source src="/images/showreel.webm" >
                 </video>
-        <div class="project row">
-          <div class="col project-info">
+        <div class="project row my-5">
+          <div class="col project-info d-flex flex-column">
             <h3>Too Wong Foo</h3>
+            <p><b>October 2023</b></p>
             <p>
               <b>Role:</b> Animator
               <br>
               <b>Video Designer:</b> Dan Light
             </p>
-            
           </div>
 
-          <div class="project-extra col d-flex flex-column align-items-center">
+          <div class="col d-flex flex-column align-items-center">
             <div id="TWFcarousel" class="carousel slide" data-bs-ride="carousel">
               
               <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="7500">
-                  <img src="/images/TWF/twf1.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item" data-bs-interval="7500">
                   <img src="/images/TWF/twf3.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item" data-bs-interval="7500">
@@ -117,7 +114,7 @@
           </div>
         </div>
 
-        <div class="project row">
+        <div class="project row my-5">
           <div class="col project-info">
             <h3>Sister Act</h3>
             <p>
@@ -125,37 +122,37 @@
             </p>
           </div>
 
-          <div class="project-extra col d-flex flex-column align-items-center">
+          <div class="col d-flex flex-column align-items-center">
             <div id="SAcarousel" class="carousel slide" data-bs-ride="carousel">
               
               <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="7500">
-                  <img src="/images/SA/Church.png" class="d-block w-100" alt="...">
+                  <img src="/images/SA/Church.png" class="d-block w-100 h-100" alt="...">
                 </div>
                 <div class="carousel-item" data-bs-interval="7500">
-                  <img src="/images/SA/Alley.png" class="d-block w-100" alt="...">
+                  <img src="/images/SA/Alley.png" class="d-block w-100 h-100" alt="...">
                 </div>
                 <div class="carousel-item" data-bs-interval="7500">
-                  <img src="/images/SA/Church02.png" class="d-block w-100" alt="...">
+                  <img src="/images/SA/Church02.png" class="d-block w-100 h-100" alt="...">
                 </div>
                 <div class="carousel-item" data-bs-interval="7500">
-                  <img src="/images/SA/BarV3.png" class="d-block w-100" alt="...">
+                  <img src="/images/SA/BarV3.png" class="d-block w-100 h-100" alt="...">
                 </div>
                 <div class="carousel-item" data-bs-interval="7500">
-                  <img src="/images/SA/Church03.png" class="d-block w-100" alt="...">
+                  <img src="/images/SA/Church03.png" class="d-block w-100 h-100" alt="...">
                 </div>
                 <div class="carousel-item" data-bs-interval="7500">
-                  <img src="/images/SA/Street.png" class="d-block w-100" alt="...">
+                  <img src="/images/SA/Street.png" class="d-block w-100 h-100" alt="...">
                 </div>
                 <div class="carousel-item" data-bs-interval="7500">
-                  <img src="/images/SA/Club.png" class="d-block w-100" alt="...">
+                  <img src="/images/SA/Club.png" class="d-block w-100 h-100" alt="...">
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="project row">
+        <div class="project row my-5">
           <div class="col project-info">
             <h3>NCL: Livin La VIVA Loca</h3>
             <p>
@@ -190,7 +187,7 @@
           </div>
         </div>
         
-        <div class="project row">
+        <div class="project row my-5">
           <div class="col project-info">
             <h3>Miss Saigon</h3>
             <p>
@@ -202,13 +199,10 @@
           </div>
 
           <div class="project-extra col d-flex flex-column align-items-center">
-            <div id="MScarousel" class="carousel slide" data-bs-ride="carousel">
+            <div id="MScarousel" class="carousel slide justify-content-center" data-bs-ride="carousel">
               
-              <div class="carousel-inner">
+              <div class="carousel-inner d-flex align-items-center">
                 <div class="carousel-item active" data-bs-interval="7500">
-                  <img src="/images/MS/Joanna-Ampil-The-Engineer-and-Jessica-Lee-Kim-Miss-Saigon-Sheffield-Theatres.-Photographer-Michael-Wharley.-Designer-Rebecca-Pitt.-Portrait.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item" data-bs-interval="7500">
                   <img src="/images/MS/Miss_Saigon_1_-_Photograph_Johan_Persson.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item" data-bs-interval="7500">
@@ -223,7 +217,7 @@
           
         </div>
 
-        <div class="project row">
+        <div class="project row my-5">
           <div class="col project-info">
             <h3>Wizard of OZ</h3>
             <p>
@@ -235,13 +229,10 @@
           </div>
 
           <div class="project-extra col d-flex flex-column align-items-center">
-            <div id="WOZcarousel" class="carousel slide" data-bs-ride="carousel">
+            <div id="WOZcarousel" class="carousel slide justify-content-center" data-bs-ride="carousel">
               
-              <div class="carousel-inner">
+              <div class="carousel-inner d-flex align-items-center">
                 <div class="carousel-item active" data-bs-interval="7500">
-                  <img src="/images/WOZ/The-Wizard-of-Oz-artwork.webp" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item" data-bs-interval="7500">
                   <img src="/images/WOZ/TWO1000.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item" data-bs-interval="7500">
@@ -258,7 +249,7 @@
           </div>
         </div>
 
-        <div class="project row">
+        <div class="project row my-5">
           <div class="col project-info">
             <h3>Time Traveller's Wife</h3>
             <p>
@@ -274,9 +265,6 @@
               
               <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="7500">
-                  <img src="/images/TTW/TTW-Artwork-portrait16448335270702-scaled.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item" data-bs-interval="7500">
                   <img src="/images/TTW/01TTW.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item" data-bs-interval="7500">
@@ -290,7 +278,7 @@
           </div>
         </div>
 
-        <div class="project row">
+        <div class="project row my-5">
           <div class="col project-info">
             <h3>Burn</h3>
             <p>
@@ -341,13 +329,14 @@
               <div class="col">
                 <div>
                   Hello! I'm Heather Scott and I am a freelance video deisgner.
-
-                  Having
-                  graduated with First Class Honours in New Media Art, I
+                  Having graduated with First Class Honours in New Media Art, I
                   developed my creative disciplines primarily in animation and
-                  film which has now progressed into the theatre industry. I have
-                  strong digital knowledge, a creative understanding alongside
-                  adept administration talents and good communication skills.
+                  film which has now progressed into the theatre industry. 
+                  Over the past year, I have worked on thetare productions both in Scotland and abroad. 
+                  I have a strong digital knowledge, and creative understanding alongside
+                  adept administration talents and good communication skills. 
+                  I aspire to develop my skills in video design and collaborate on projects which I have real passion and interest in. 
+                  Outside of work, I enjoy reguarly playing Dungeons and Dragons where I write stories, draw maps and create worlds.
                 </div>
               </div>
             </div>
