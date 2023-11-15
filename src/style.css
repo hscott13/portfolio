@@ -2,7 +2,9 @@
   --light: #fdfefe;
   --dark: ##252525;
 }
-
+.active {
+  font-weight: bolder;
+}
 h1,
 h2,
 h3,
@@ -18,9 +20,11 @@ body {
   font-weight: 400;
   font-style: normal;
   color: var(--dark);
+  position: relative;
 }
 .navbar {
   background-color: var(--light);
+  text-transform: uppercase;
 }
 .gradient {
   object-fit: cover;

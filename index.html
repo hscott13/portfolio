@@ -28,15 +28,14 @@
     <title>Heather Scott - Creative</title>
     <link rel="stylesheet" href="/src/style.css" />
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg fixed-top">
+  <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="/">H.S</a>
         <button
           class="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
+          data-toggle="collapse"
+          data-target="#navbarNav"
           aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
@@ -45,11 +44,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
+            
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#video"> Work </a>
+              <a class="nav-link" href="#work"> Work </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
@@ -61,23 +58,21 @@
         </div>
       </div>
     </nav>
+  <body class="main" data-bs-spy="scroll" data-bs-target="#navbar" data-offset="50">
     <head>
       <div class="intro">
         <video playsinline autoplay muted loop class="gradient">
           <source src="/images/Gradient.webm" >
         </video>
         <div class="header-text">
-        <h1>Heather Scott</h1>
-        <h3>Creative, based in Glasgow</h3>
-        <a href="#contact">GET IN TOUCH</a>
+          <h1>Heather Scott</h1>
+          <h3>Creative, based in Glasgow</h3>
+          <a href="#contact">GET IN TOUCH</a>
+        </div>
       </div>
-      </div>
-
-      
     </head>
     
-    <div >
-      
+    <div id="work">
       <div class="container projects d-flex flex-column">
         <video  class="justify-content-center" height="700px" autoplay="autoplay" loop>
                     <source src="/images/showreel.webm" >
@@ -87,8 +82,8 @@
           <div class=" col project-info d-flex align-items-center">
             
             <div>
-              <b>October 2023</b>
-            <p>
+              <div class="project-date">October 2023</div>
+            <p class="project-roles">
               <b>Role:</b> Animator
               <br>
               <b>Video Designer:</b> Dan Light
@@ -121,8 +116,8 @@
           <h3>Sister Act</h3>
           <div class="col project-info d-flex align-items-center">
             <div>
-              <b>September 2023</b>
-            <p>
+              <div class="project-date">September 2023</div>
+            <p class="project-roles">
               <b>Role:</b> Projection Designer
             </p>
             </div>
@@ -162,8 +157,8 @@
           <h3>Livin La VIVA Loca</h3>
           <div class="col project-info d-flex align-items-center">
             <div>
-              <b>August 2023</b>
-            <p>
+              <div class="project-date">August 2023</div>
+            <p class="project-roles">
               <b>Role:</b> Video Design Assistant
               <br>
               <b>Video Designer:</b> George Reeve
@@ -199,8 +194,8 @@
          <h3>Miss Saigon</h3>
          <div class="col project-info d-flex align-items-center">
             <div>
-              <b>June 2023</b>
-            <p>
+              <div class="project-date">June 2023</div>
+            <p class="project-roles">
               <b>Role:</b> Asset Creation
               <br>
               <b>Video Designer:</b> Andrzej Goulding
@@ -224,15 +219,14 @@
               </div>
             </div>
           </div>
-          
         </div>
 
         <div class="project row my-5">
           <h3>Wizard of OZ</h3>
           <div class="col project-info d-flex align-items-center">
             <div>
-              <b>November 2022 - March 2023</b>
-            <p>
+              <div class="project-date">November 2022 - March 2023</div>
+            <p class="project-roles">
               <b>Role:</b> After Effects Support
               <br>
               <b>Video Designer:</b> Douglas O’Connell
@@ -265,8 +259,8 @@
           <h3>Time Traveller's Wife</h3>
           <div class="col project-info d-flex align-items-center">
             <div>
-              <b>September 2022</b>
-            <p>
+              <div class="project-date">September 2022</div>
+            <p class="project-roles">
               <b>Role:</b> Video Assistant
               <br>
               <b>Video Designer:</b> Andrzej Goulding
@@ -296,8 +290,8 @@
           <h3>Burn</h3>
           <div class="col project-info d-flex align-items-center">
             <div>
-              <b>June 2022 - August 2022</b>
-            <p>
+              <div class="project-date">June 2022 - August 2022</div>
+            <p class="project-roles">
               <b>Role:</b> Video Design Assistant
               <br>
               <b>Video Designer:</b> Andrzej Goudling
@@ -331,7 +325,7 @@
 
         </div>
     </div>
-
+<div id="about">
     <div class="d-flex justify-content-center">
                 <video  height="250"autoplay="autoplay" loop>
                     <source src="/images/profile.webm" >
@@ -527,15 +521,14 @@
           </div>
         </div>
       </div>
-    </div>
-    <div>
-      <h2 id="contact" class="title">Get in Touch</h2>
+    </div></div>
+    <div id="contact">
+      <h2  class="title">Get in Touch</h2>
       <h3 class="mb-4">
         <i class="fa-solid fa-envelope"></i>
         <a href="mailto:heatherscottchb@gmail.com">heatherscottchb@gmail.com</a>
       </h3>
       
-    <footer>
       <div class="container">
         <div class="row">
           <div class="col d-flex justify-content-center">
@@ -561,6 +554,15 @@
           </div>
         </div>
       </div>
-    </footer>
+    </div>
+ 
+    <script>
+        $(function () {
+            $('body').scrollspy({
+                target: '#navbar',
+                offset: 50
+            });
+        });
+    </script>
   </body>
 </html>
