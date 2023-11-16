@@ -26,6 +26,7 @@ body {
   background-color: var(--light);
   text-transform: uppercase;
 }
+
 .gradient {
   object-fit: cover;
   height: 100%;
@@ -48,7 +49,17 @@ body {
 .header-text {
   position: relative;
 }
-
+.header-text h1 {
+  font-size: 120px;
+  text-decoration: underline;
+  text-decoration-thickness: 7px;
+  text-underline-offset: 0.15em;
+}
+.header-text h3 {
+  font-family: poppins, sans-serif;
+  font-size: 36px;
+  font-weight: 200;
+}
 .experience {
   height: 700px;
   overflow-y: scroll;
@@ -84,7 +95,7 @@ body {
   font-size: 90px;
   -webkit-text-stroke-color: var(--light);
   -webkit-text-stroke-width: 2px;
-  padding-left: 250px;
+  padding-left: 25%;
   overflow: visible;
   z-index: 2;
   position: absolute;
@@ -96,4 +107,12 @@ body {
 .carousel-item img {
   height: 500px;
   object-fit: cover;
+}
+.project-date {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+}
+.project-roles {
+  font-size: 24px;
 }
