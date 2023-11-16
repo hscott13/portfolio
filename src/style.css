@@ -61,7 +61,7 @@ body {
   font-weight: 200;
 }
 .experience {
-  height: 700px;
+  height: 500px;
   overflow-y: scroll;
 }
 .experience::-webkit-scrollbar {
@@ -112,7 +112,12 @@ body {
   font-size: 36px;
   font-weight: bold;
   text-align: center;
+  padding-bottom: 10px;
 }
 .project-roles {
   font-size: 24px;
+}
+
+.contact {
+  height: 1000px;
 }
