@@ -120,15 +120,40 @@ body {
   width: auto;
   padding: 20px;
   margin: 25px;
-  border: 5px solid #252525;
-  border-radius: 5px;
 }
 
-.contact {
-  height: 1000px;
+.special-border {
+  border: 5px solid #252525;
+  border-radius: 5px;
 }
 
 .icons a {
   font-size: 10rem;
   color: var(--dark);
+}
+
+form input {
+  padding: 10px;
+}
+
+form input::placeholder {
+  text-transform: uppercase;
+}
+
+.message {
+  display: inline-block;
+  position: relative;
+}
+
+.message button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.message textarea {
+  padding: 10px;
+  display: block;
+  height: 150px;
+  text-transform: uppercase;
 }

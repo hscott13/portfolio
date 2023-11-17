@@ -14,7 +14,8 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+   integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     
     <link rel="stylesheet" href="https://use.typekit.net/lwd3yjd.css" />
     <script
@@ -315,7 +316,7 @@
             <div class="container">
               <div class="row">
                 <div class="col">
-                  <div class="block">
+                  <div class="block special-border">
                     Hello! I'm Heather Scott and I am a freelance video deisgner.
                     Having graduated with First Class Honours in New Media Art, I
                     developed my creative disciplines primarily in animation. 
@@ -328,7 +329,7 @@
               <div class="row">
                 <div>
                   <h3>SKILLS</h3>
-                  <div class="row block">
+                  <div class="row block special-border">
                     <div class="col">
                       <p>Adobe After Effects<b>*</b></p>
                       <p>Adobe Photoshop<b>*</b></p>
@@ -349,7 +350,7 @@
               <h3 class="pb-1">What I've been up to</h3>
               <div class="experience">
                 
-                  <div class="container block">
+                  <div class="container block special-border">
                     <div class="row">
                       <div class="col"><h4>To Wong Foo</h4></div>
                       <div class="col"><h5>October 2023</h5></div>
@@ -371,7 +372,7 @@
                     </div>
                   </div>
                 
-                  <div class="container block">
+                  <div class="container block special-border">
                     <div class="row"><h4>Sister Act</h4></div>
                     <div class="row">
                       <div class="col"><b>Role: </b>Projection Designer</div>
@@ -392,7 +393,7 @@
                     </div>
                   </div>
                 
-                  <div class="container block">
+                  <div class="container block special-border">
                     <div class="row"><h4>NCL: Livin La Viva Loca</h4></div>
                     <div class="row">
                       <div class="col"><b>Role: </b>Video Design Assistant</div>
@@ -411,7 +412,7 @@
                     </div>
                   </div>
                 
-                  <div class="container block">
+                  <div class="container block special-border">
                     <div class="row"><h4>Miss Saigon</h4></div>
                     <div class="row">
                       <div class="col"><b>Role: </b>Asset Creation</Video></div>
@@ -429,7 +430,7 @@
                     </div>
                   </div>
                 
-                  <div class="container block">
+                  <div class="container block special-border">
                     <div class="row"><h4>Wizard of OZ</h4></div>
                     <div class="row">
                       <div class="col"><b>Role: </b>Video Design Assistant</div>
@@ -452,7 +453,7 @@
                     </div>
                   </div>
                 
-                  <div class="container block">
+                  <div class="container block special-border">
                     <div class="row"><h4>Time Travellers Wife</h4></div>
                     <div class="row">
                       <div class="col"><b>Role: </b>Video Design Assistant</div>
@@ -472,7 +473,7 @@
                     </div>
                   </div>
                 
-                  <div class="container block">
+                  <div class="container block special-border">
                     <div class="row"><h4>Burn</h4></div>
                     <div class="row">
                       <div class="col"><b>Role: </b>Video Design Assistant</div>
@@ -534,14 +535,20 @@
             </div>
           </div>
         </div>
-        <div class="col"><h2  class="title pt-5">Get in Touch</h2>
-          <h3 class="mb-4">
-            <i class="fa-solid fa-envelope"></i>
-            <a href="mailto:heatherscottchb@gmail.com">heatherscottchb@gmail.com</a>
-          </h3></div>
-          
-          
-          
+        <div class="col mx-5"><h2  class="title pt-5 fs-1">Get in Touch <i class="fa-solid fa-envelope"></i></h2>
+          <form name="contact" method="POST" netlify>
+            <p>
+              <input type="text" name="name" placeholder="Your Name" class="special-border w-100"/>
+            </p>
+            <p>
+              <input type="email" name="email" placeholder="Subject" class="special-border w-100"/>
+            </p>
+            <p class="message w-100">
+              <textarea name="message" placeholder="Say Hi!" class="special-border w-100"></textarea>
+              <button type="submit" class="border-0 bg-transparent"><i class="fa-regular fa-paper-plane fs-3"></i></button>
+            </p>
+          </form>
+        </div>
       </div>
     </div>
  
