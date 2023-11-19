@@ -8,25 +8,9 @@
       content="Portfolio of Heather Scott, front-end developer and creative"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Raleway:wght@100;200;300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/lwd3yjd.css" />
     <script
       src="https://kit.fontawesome.com/07abe82056.js"
       crossorigin="anonymous"
@@ -34,114 +18,550 @@
     <title>Heather Scott - Creative</title>
     <link rel="stylesheet" href="/src/style.css" />
   </head>
-  <body>
-    <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+  <nav id="navbar" class="navbar navbar-expand-lg sticky-top navbar-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/">H.S</a>
+        <a class="navbar-brand" href="/"><img src="/images/signature.png" width="200px"></a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler border-0"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
           aria-controls="navbarNav"
           aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+        <div class="collapse navbar-collapse justify-content-end fs-5 pe-4" id="navbarNav">
+          <ul class="navbar-nav pages">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="/work.html"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Work
-              </a>
-              <ul class="dropdown-menu dropdown-menu-dark">
-                <li>
-                  <a class="dropdown-item" href="/work.html#code">Code</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/work.html#video">Video</a>
-                </li>
-              </ul>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="/about.html">About</a>
+              <a class="nav-link" href="#work">Work</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/about.html#contact">Contact</a>
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <main>
+  <body data-bs-spy="scroll" data-bs-target="#navbar" data-offset="0"  class="scrollspy-example" tabindex="0">
+    <head>
       <div class="intro">
-        <h2>Hi there, I'm</h2>
-        <h1>Heather Scott</h1>
+        <video playsinline autoplay muted loop class="gradient">
+         <source src="/images/Gradient.webm" >
+       </video>
+        <div class="header-text pb-5">
+          <h1>Heather Scott</h1>
+          <h3>Video Designer, based in Glasgow</h3>
+          <a href="#contact" class="contact-button">GET IN TOUCH</a>
+        </div>
+      </div>
+    </head>
+    
+    <div id="work">
+      <div class="container projects d-flex flex-column pt-5">
+                <video  class="showreel" autoplay="autoplay" loop>
+                    <source src="/images/showreel.webm" >
+                </video>
+        <div class="container project row my-5">
+          <h3>Too Wong Foo</h3>
+          <div class=" col project-info d-flex flex-column justify-content-end">
+              <div class="project-date text-uppercase d-flex">October 2023</div>
+            <p class="project-roles text-uppercase">
+              <b>Role:</b> Animator
+              <br>
+              <b>Video Designer:</b> Dan Light
+            </p>
+          </div>
 
-        <h3>Creative, based in Glasgow</h3>
-        <span>
-          Graduated in 2021 with a First class Honours in New Media Art where I
-          studied <strong>animation</strong> and <strong></strong>film. I have
-          worked in <strong>video design</strong> the for theatre productions
-          for the past year, on shows such as Burn (2022), Time Traveller's Wife
-          (2022) and Wizard of Oz (2022,2023). Currently I am working freelance
-          for video editing and learning web development.<br />
-          <strong>I am currently available for work</strong>
-        </span>
-        <a href="/about.html#contact" class="btn-contact mt-4">GET IN TOUCH</a>
-      </div>
+          <div class="project-extra col d-flex flex-column align-items-center">
+            <div id="TWFcarousel" class="carousel slide" data-bs-ride="carousel">
+              
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="7500">
+                  <img src="/images/TWF/twf3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="7500">
+                  <img src="/images/TWF/twf5.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="7500">
+                  <img src="/images/TWF/twf6.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="7500">
+                  <img src="/images/TWF/twf7.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-      <div class="container w-50 mb-5 homepage-content">
-        <div class="row">
-          <h2 class="mt-5">What would you like to see?</h2>
-        </div>
-        <div class="row mx-5 g-5 d-flex">
-          <div class="col d-flex justify-content-center">
-            <a href="/work.html" class="btn-page">code</a>
+        <div class="container project row my-5">
+          <h3>Sister Act</h3>
+          <div class="col project-info d-flex flex-column justify-content-end">
+              <div class="project-date text-uppercase d-flex">September 2023</div>
+            <p class="project-roles text-uppercase">
+              <b>Role:</b> Projection Designer
+            </p>
           </div>
-          <div class="col d-flex justify-content-center">
-            <a href="/work.html" class="btn-page">video</a>
+
+          <div class="col d-flex flex-column align-items-center">
+            <div id="SAcarousel" class="carousel slide" data-bs-ride="carousel">
+              
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="7500">
+                  <img src="/images/SA/Church.png" class="d-block w-100 h-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="7500">
+                  <img src="/images/SA/Alley.png" class="d-block w-100 h-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="7500">
+                  <img src="/images/SA/Church02.png" class="d-block w-100 h-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="7500">
+                  <img src="/images/SA/BarV3.png" class="d-block w-100 h-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="7500">
+                  <img src="/images/SA/Church03.png" class="d-block w-100 h-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="7500">
+                  <img src="/images/SA/Street.png" class="d-block w-100 h-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="7500">
+                  <img src="/images/SA/Club.png" class="d-block w-100 h-100" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container project row my-5">
+          <h3>Livin La VIVA Loca</h3>
+          <div class="col project-info d-flex flex-column justify-content-end">
+              <div class="project-date text-uppercase d-flex">August 2023</div>
+            <p class="project-roles text-uppercase">
+              <b>Role:</b> Video Design Assistant
+              <br>
+              <b>Video Designer:</b> George Reeve
+            </p>
+          </div>
+
+          <div class="project-extra col d-flex flex-column align-items-center">
+            <div id="NCLcarousel" class="carousel slide" data-bs-ride="carousel">
+             
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="7500">
+                  <img src="/images/NCL/0bc050fb-9ae9-4247-b171-d23e880befe7.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="7500">
+                  <img src="/images/NCL/3aebb156-9dee-4be2-b513-521ea05bdf92.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="7500">
+                  <img src="/images/NCL/5d4efdc5-dbb5-4949-891a-1d42e22a5bd2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="7500">
+                  <img src="/images/NCL/c94ba837-93e8-45ce-a259-666c9ee90928.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="7500">
+                  <img src="/images/NCL/f326c445-99ee-4834-a5e5-46d45456b229.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="container project row my-5">
+         <h3>Miss Saigon</h3>
+         <div class="col project-info d-flex flex-column justify-content-end">
+              <div class="project-date text-uppercase d-flex">June 2023</div>
+            <p class="project-roles text-uppercase">
+              <b>Role:</b> Asset Creation
+              <br>
+              <b>Video Designer:</b> Andrzej Goulding
+            </p>
+          </div>
+
+          <div class="project-extra col d-flex flex-column align-items-center">
+            <div id="MScarousel" class="carousel slide justify-content-center" data-bs-ride="carousel">
+              
+              <div class="carousel-inner d-flex align-items-center">
+                <div class="carousel-item active" data-bs-interval="7500">
+                  <img src="/images/MS/Miss_Saigon_1_-_Photograph_Johan_Persson.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="7500">
+                  <img src="/images/MS/Miss_Saigon_2_-_Photograph_Johan_Persson.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="7500">
+                  <img src="/images/MS/Miss_Saigon_3_-_Photograph_Johan_Persson.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container project row my-5">
+          <h3>Wizard of OZ</h3>
+          <div class="col project-info d-flex flex-column justify-content-end">
+              <div class="project-date text-uppercase d-flex">November 2022 - March 2023</div>
+            <p class="project-roles text-uppercase">
+              <b>Role:</b> After Effects Support
+              <br>
+              <b>Video Designer:</b> Douglas O’Connell
+            </p>
+          </div>
+
+          <div class="project-extra col d-flex flex-column align-items-center">
+            <div id="WOZcarousel" class="carousel slide justify-content-center" data-bs-ride="carousel">
+              
+              <div class="carousel-inner d-flex align-items-center">
+                <div class="carousel-item active" data-bs-interval="7500">
+                  <img src="/images/WOZ/TWO1000.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="7500">
+                  <img src="/images/WOZ/Wizard-Oz-Palladium-PROD-0406-1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="7500">
+                  <img src="/images/WOZ/Wizard-Oz-Palladium-PROD-6021-1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="7500">
+                  <img src="/images/WOZ/Wizard-Oz-Palladium-PROD-6240-1.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container project row my-5">
+          <h3>Time Traveller's Wife</h3>
+          <div class="col project-info d-flex flex-column justify-content-end">
+              <div class="project-date text-uppercase d-flex">September 2022</div>
+            <p class="project-roles text-uppercase">
+              <b>Role:</b> Video Assistant
+              <br>
+              <b>Video Designer:</b> Andrzej Goulding
+            </p>
+          </div>
+          <div class="project-extra col d-flex flex-column align-items-center">
+            <div id="TTWcarousel" class="carousel slide" data-bs-ride="carousel">
+              
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="7500">
+                  <img src="/images/TTW/01TTW.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="7500">
+                  <img src="/images/TTW/02TTW.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="7500">
+                  <img src="/images/TTW/03TTW.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container project row my-5">
+          <h3>Burn</h3>
+          <div class="col project-info d-flex flex-column justify-content-end">
+              <div class="project-date text-uppercase d-flex">June 2022 - August 2022</div>
+            <p class="project-roles text-uppercase">
+              <b>Role:</b> Video Design Assistant
+              <br>
+              <b>Video Designer:</b> Andrzej Goudling
+            </p>
+          </div>
+          <div class="project-extra col d-flex flex-column align-items-center">
+            <div id="Bcarousel" class="carousel slide" data-bs-ride="carousel">
+              
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="7500">
+                  <img src="/images/BURN/Burn Production Photography - Photo credit Tommy Ga-Ken Wan 01.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="7500">
+                  <img src="/images/BURN/Burn Production Photography - Photo credit Tommy Ga-Ken Wan 06.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="7500">
+                  <img src="/images/BURN/Burn Production Photography - Photo credit Tommy Ga-Ken Wan 09.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="7500">
+                  <img src="/images/BURN/Burn Production Photography - Photo credit Tommy Ga-Ken Wan 11.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="7500">
+                  <img src="/images/BURN/Burn Production Photography - Photo credit Tommy Ga-Ken Wan 17.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </main>
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col d-flex justify-content-center">
-            <a
-              href="https://www.linkedin.com/in/heather-scott-8299761a4/"
-              title="Connect on LinkedIn"
-              target="_blank"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
+    </div>
+  <div id="about">
+            <div class="d-flex justify-content-center pt-5">
+                <video class="pt-5" height="250"autoplay="autoplay" loop>
+                    <source src="/images/profile.webm" >
+                </video>
+            </div>
+      <div class="container about-section d-flex cv pb-5">
+        <div class="row g-0">
+          <div class="col-md-12 col-lg-5 flex-2">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div class="block special-border fs-5">
+                    Hello! I'm Heather Scott and I am a freelance video deisgner.
+                    Having graduated with First Class Honours in New Media Art, I
+                    developed my creative disciplines primarily in animation. 
+                    Over the past year, I have worked on theatre productions both in Scotland and abroad. 
+                    I aspire to develop my skills in video design and collaborate on projects which I have real passion and interest in.
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div>
+                  <h3>SKILLS</h3>
+                  <div class="row block special-border text-uppercase fw-bold">
+                    <div class="col d-flex flex-column align-items-center">
+                      <p>Adobe After Effects*</p>
+                      <p>Adobe Photoshop*</p>
+                      <p>Adobe Premiere Pro</p>
+                  </div>
+                  <div class="col d-flex flex-column align-items-center ">
+                    <p>Canva</p>
+                    <p>Javascript</p>
+                    <p>React.js</p>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col d-flex justify-content-center">
-            <a href="mailto:heatherscottchb@gmail.com" title="Send me an email"
-              ><i class="fa-solid fa-envelope"></i
-            ></a>
-          </div>
-          <div class="col d-flex justify-content-center">
-            <a
-              href="https://www.instagram.com/heather.scott.creative/"
-              title="Follow my Instagram"
-              target="_blank"
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
+          <div class="col-md-12 col-lg-7 pt-3 flex-1">
+            <div class="container p-0">
+              <h3 class="pb-1">What I've been up to</h3>
+              <div class="experience">
+                
+                  <div class="container block special-border">
+                    <div class="row">
+                      <div class="col"><h4>To Wong Foo</h4></div>
+                      <div class="col d-flex text-uppercase justify-content-end fs-5"><p>October 2023</p></div>
+                    </div>
+                    <div class="row">
+                    
+                      <div><b>Role: </b>Animator</div>
+                    </div>
+                      
+                    <div class="row">
+                      <ul>
+                        <li>
+                          Worked with video designer Dan Light, I assisted with creating video and static content for the production of 'To Wong Foo'.
+                        </li>
+                        <li>
+                          Using After Effects and Photoshop to create original and collage assets and 2D animations.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                
+                  <div class="container block special-border">
+                    <div class="row">
+                      <div class="col"><h4>Sister Act</h4></div>
+                      <div class="col d-flex text-uppercase justify-content-end fs-5"><p>September 2023</p></div>
+                    </div>
+                    <div class="row">
+                      <div class="col"><b>Role: </b>Projection Designer</div>
+                    </div>
+                    <div class="row">
+                      <ul>
+                        <li>
+                          I produced digital scenic backdrops both static and animated for a school production 
+                          of ‘Sister Act’ showcased at the Ayr Gaiety Theatre. 
+                        </li>
+                        <li>
+                          Working with the director, I independently designed, produced and edited the background images for the show. 
+                          Utilising Adobe Photoshop and After Effects, stock footage and personally created assets.
+                        </li>
+                        
+                      </ul>
+                    </div>
+                  </div>
+                
+                  <div class="container block special-border">
+                    <div class="row">
+                      <div class="col"><h4>NCL: Livin La Viva Loca</h4></div>
+                      <div class="col d-flex text-uppercase justify-content-end fs-5"><p>August 2023</p></div>
+                    </div>
+                    <div class="row">
+                      <div class="col"><b>Role: </b>Video Design Assistant</div>
+                    </div>
+                    <div class="row">
+                      <ul>
+                        <li>
+                          I assisted with designing video content for the updated club nights for the new Norweigan Cruise vessel.
+                          Working with video designer George Reeve, I edited a 45-minute performance to both produced tracks and design briefs.
+                        </li>
+                        <li>
+                          Utilising Adobe After Effects, stock footage and personally created assets.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                
+                  <div class="container block special-border">
+                    <div class="row">
+                      <div class="col"><h4>Miss Saigon</h4></div>
+                      <div class="col d-flex text-uppercase justify-content-end fs-5"><p>June 2023</p></div>
+                    </div>
+                    <div class="row">
+                      <div class="col"><b>Role: </b>Asset Creation</Video></div>
+                      
+                    </div>
+                    <div class="row">
+                      <ul>
+                        <li>
+                          Working with Andrzej Goulding, I assisted with designing digital assets for the new production of 'Miss Saigon'.
+                        </li>
+                        <li>
+                          Utilising Adobe Photoshop and undertaking research work.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                
+                  <div class="container block special-border">
+                    <div class="row">
+                     <div class="col"><h4>Wizard of OZ</h4></div> 
+                      <div class="col d-flex text-uppercase justify-content-end fs-5"><p>November 2022</p></div>
+                    </div>
+                    <div class="row">
+                      <div class="col"><b>Role: </b>Video Design Assistant</div>
+                      
+                    </div>
+                    <div class="row">
+                      <ul>
+                        <li>
+                          Worked with video designer Douglas O’Connell on the
+                          video design for the new production of 'Wizard of Oz'
+                          for both the Leicester run and the West End production.
+                        </li>
+                        <li>
+                          Using After Effects and 3D software to create backdrops
+                          and scenic elements, creating original video and working
+                          with a mixture of green screen footage.
+                        </li>
+                        
+                      </ul>
+                    </div>
+                  </div>
+                
+                  <div class="container block special-border">
+                    <div class="row">
+                      <div class="col"><h4>Time Travellers Wife</h4></div>
+                      <div class="col d-flex text-uppercase justify-content-end fs-5"><p>September 2022</p></div>
+                    </div>
+                    <div class="row">
+                      <div class="col"><b>Role: </b>Video Design Assistant</div>
+                    </div>
+                    <div class="row">
+                      <ul>
+                        <li>
+                          I provided assistant work with researching and creating
+                          video content for the production of 'Time Traveler's
+                          Wife'.
+                        </li>
+                        <li>
+                          Working again with video designer Andrzej Goulding.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                
+                  <div class="container block special-border">
+                    <div class="row">
+                      <div class="col"><h4>Burn</h4></div>
+                      <div class="col d-flex text-uppercase justify-content-end fs-5"><p>June 2022 - August 2022</p></div>
+                    </div>
+                    <div class="row">
+                      <div class="col"><b>Role: </b>Video Design Assistant</div>
+                    </div>
+                    <div class="row">
+                      <ul>
+                        <li>
+                          For the 2022 production of 'Burn', I assisted in the
+                          video creation for the entire performance, developing my
+                          skills in animation, film and editing in a different
+                          industry.
+                        </li>
+                        <li>
+                          This experience has taught me insight into
+                          the creation of theatre productions and honed my own
+                          understanding of creative work in a professional and
+                          collaborative setting.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </footer>
+  </div>
+    <div id="contact">
+      <div class="contact row">
+        
+        <div class="col-md-12 col-lg-6 px-5 d-flex flex-column justify-content-center">
+          <h2  class="title pt-5">Get in Touch <i class="fa-solid fa-envelope"></i></h2>
+          <form name="contact" method="POST" netlify>
+            <p>
+              <input type="text" name="name" placeholder="Your Name" class="special-border w-100 fs-5"/>
+            </p>
+            <p>
+              <input type="email" name="email" placeholder="Subject" class="special-border w-100 fs-5"/>
+            </p>
+            <p class="message w-100">
+              <textarea name="message" placeholder="Say Hi!" class="special-border w-100 fs-5"></textarea>
+              <button type="submit" class="border-0 bg-transparent"><i class="fa-regular fa-paper-plane fs-3"></i></button>
+            </p>
+          </form>
+        </div>
+        <div class="col-md-12 col-lg-6 d-flex align-items-center">
+          
+            <div class="icons row pt-5 g-0">
+              <div class="col-4 d-flex justify-content-center"><a
+                  href="https://www.instagram.com/heather.scott.creative/"
+                  title="Follow my Instagram"
+                  target="_blank"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </div>
+            
+            
+              <div class="col-4 d-flex justify-content-center">
+                <a href="https://vimeo.com/user75489019"
+                  title="Follow my Vimeo"
+                  target="_blank"
+                  ><i class="fa-brands fa-vimeo"></i></a>
+              </div>
+              <div class="col-4 d-flex justify-content-center">
+                <a
+                  href="https://www.linkedin.com/in/heather-scott-8299761a4/"
+                  title="Connect on LinkedIn"
+                  target="_blank"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              </div>
+          </div>
+    </div>
+ 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js">
+        $(function () {
+            $('body').scrollspy({
+                target: '#navbar',
+                offset: 5
+            });
+        });
+      
+    </script>
   </body>
 </html>
