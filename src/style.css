@@ -161,7 +161,12 @@ form input {
 form input::placeholder {
   text-transform: uppercase;
 }
-
+.mail {
+  color: var(--dark);
+}
+.mail:hover {
+  color: var(--dark);
+}
 .message {
   display: inline-block;
   position: relative;
