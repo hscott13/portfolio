@@ -9,6 +9,7 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.typekit.net/lwd3yjd.css" />
     <script
       src="https://kit.fontawesome.com/07abe82056.js"
@@ -17,7 +18,7 @@
     <title>Heather Scott - Creative</title>
     <link rel="stylesheet" href="/src/style.css" />
   </head>
-  <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-light">
+  <nav id="navbar" class="navbar navbar-expand-lg sticky-top navbar-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="/"><img src="/images/signature.png" width="200px"></a>
         <button
@@ -67,7 +68,7 @@
         <div class="container project row my-5">
           <h3>Too Wong Foo</h3>
           <div class=" col project-info d-flex flex-column justify-content-end">
-              <div class="project-date text-uppercase d-flex justify-content-center">October 2023</div>
+              <div class="project-date text-uppercase d-flex">October 2023</div>
             <p class="project-roles text-uppercase">
               <b>Role:</b> Animator
               <br>
@@ -75,7 +76,7 @@
             </p>
           </div>
 
-          <div class="col slider d-flex flex-column align-items-center w-50">
+          <div class="project-extra col d-flex flex-column align-items-center">
             <div id="TWFcarousel" class="carousel slide" data-bs-ride="carousel">
               
               <div class="carousel-inner">
@@ -96,10 +97,10 @@
           </div>
         </div>
 
-        <div class="project row my-5">
+        <div class="container project row my-5">
           <h3>Sister Act</h3>
           <div class="col project-info d-flex flex-column justify-content-end">
-              <div class="project-date text-uppercase d-flex justify-content-center">September 2023</div>
+              <div class="project-date text-uppercase d-flex">September 2023</div>
             <p class="project-roles text-uppercase">
               <b>Role:</b> Projection Designer
             </p>
@@ -135,10 +136,10 @@
           </div>
         </div>
 
-        <div class="project row my-5">
+        <div class="container project row my-5">
           <h3>Livin La VIVA Loca</h3>
           <div class="col project-info d-flex flex-column justify-content-end">
-              <div class="project-date text-uppercase d-flex justify-content-center">August 2023</div>
+              <div class="project-date text-uppercase d-flex">August 2023</div>
             <p class="project-roles text-uppercase">
               <b>Role:</b> Video Design Assistant
               <br>
@@ -170,10 +171,10 @@
           </div>
         </div>
         
-        <div class="project row my-5">
+        <div class="container project row my-5">
          <h3>Miss Saigon</h3>
          <div class="col project-info d-flex flex-column justify-content-end">
-              <div class="project-date text-uppercase d-flex justify-content-center">June 2023</div>
+              <div class="project-date text-uppercase d-flex">June 2023</div>
             <p class="project-roles text-uppercase">
               <b>Role:</b> Asset Creation
               <br>
@@ -199,10 +200,10 @@
           </div>
         </div>
 
-        <div class="project row my-5">
+        <div class="container project row my-5">
           <h3>Wizard of OZ</h3>
           <div class="col project-info d-flex flex-column justify-content-end">
-              <div class="project-date text-uppercase d-flex justify-content-center">November 2022 - March 2023</div>
+              <div class="project-date text-uppercase d-flex">November 2022 - March 2023</div>
             <p class="project-roles text-uppercase">
               <b>Role:</b> After Effects Support
               <br>
@@ -231,10 +232,10 @@
           </div>
         </div>
 
-        <div class="project row my-5">
+        <div class="container project row my-5">
           <h3>Time Traveller's Wife</h3>
           <div class="col project-info d-flex flex-column justify-content-end">
-              <div class="project-date text-uppercase d-flex justify-content-center">September 2022</div>
+              <div class="project-date text-uppercase d-flex">September 2022</div>
             <p class="project-roles text-uppercase">
               <b>Role:</b> Video Assistant
               <br>
@@ -259,10 +260,10 @@
           </div>
         </div>
 
-        <div class="project row my-5">
+        <div class="container project row my-5">
           <h3>Burn</h3>
           <div class="col project-info d-flex flex-column justify-content-end">
-              <div class="project-date text-uppercase d-flex justify-content-center">June 2022 - August 2022</div>
+              <div class="project-date text-uppercase d-flex">June 2022 - August 2022</div>
             <p class="project-roles text-uppercase">
               <b>Role:</b> Video Design Assistant
               <br>
@@ -300,9 +301,9 @@
                     <source src="/images/profile.webm" >
                 </video>
             </div>
-      <div class="container d-flex cv pb-5">
+      <div class="container about-section d-flex cv pb-5">
         <div class="row g-0">
-          <div class="col-5 flex-2">
+          <div class="col-md-12 col-lg-5 flex-2">
             <div class="container">
               <div class="row">
                 <div class="col">
@@ -334,7 +335,7 @@
               </div>
             </div>
           </div>
-          <div class="col-7 pt-3 flex-1">
+          <div class="col-md-12 col-lg-7 pt-3 flex-1">
             <div class="container p-0">
               <h3 class="pb-1">What I've been up to</h3>
               <div class="experience">
@@ -507,38 +508,10 @@
       </div>
   </div>
     <div id="contact">
-      <div class="contact row pt-5">
-        <div class="col">
-          <div class="icons">
-            <div class="row pt-5 g-0">
-              <div class="col d-flex justify-content-center"><a
-                  href="https://www.instagram.com/heather.scott.creative/"
-                  title="Follow my Instagram"
-                  target="_blank"
-                  ><i class="fa-brands fa-instagram"></i
-                ></a>
-                
-              </div>
-            </div>
-            <div class="row px-5">
-              <div class="col d-flex justify-content-center">
-                <a href="https://vimeo.com/user75489019"
-                  title="Follow my Vimeo"
-                  target="_blank"
-                  ><i class="fa-brands fa-vimeo"></i></a>
-              </div>
-              <div class="col d-flex justify-content-center">
-                <a
-                  href="https://www.linkedin.com/in/heather-scott-8299761a4/"
-                  title="Connect on LinkedIn"
-                  target="_blank"
-                  ><i class="fa-brands fa-linkedin"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col mx-5"><h2  class="title pt-5 fs-1">Get in Touch <i class="fa-solid fa-envelope"></i></h2>
+      <div class="contact row">
+        
+        <div class="col-md-12 col-lg-6 px-5 d-flex flex-column justify-content-center">
+          <h2  class="title pt-5">Get in Touch <i class="fa-solid fa-envelope"></i></h2>
           <form name="contact" method="POST" netlify>
             <p>
               <input type="text" name="name" placeholder="Your Name" class="special-border w-100 fs-5"/>
@@ -552,7 +525,33 @@
             </p>
           </form>
         </div>
-      </div>
+        <div class="col-md-12 col-lg-6 d-flex align-items-center">
+          
+            <div class="icons row pt-5 g-0">
+              <div class="col-4 d-flex justify-content-center"><a
+                  href="https://www.instagram.com/heather.scott.creative/"
+                  title="Follow my Instagram"
+                  target="_blank"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </div>
+            
+            
+              <div class="col-4 d-flex justify-content-center">
+                <a href="https://vimeo.com/user75489019"
+                  title="Follow my Vimeo"
+                  target="_blank"
+                  ><i class="fa-brands fa-vimeo"></i></a>
+              </div>
+              <div class="col-4 d-flex justify-content-center">
+                <a
+                  href="https://www.linkedin.com/in/heather-scott-8299761a4/"
+                  title="Connect on LinkedIn"
+                  target="_blank"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              </div>
+          </div>
     </div>
  
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js">
