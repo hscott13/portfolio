@@ -5,6 +5,7 @@
 .active {
   font-weight: bolder;
 }
+
 h1,
 h2,
 h3,
@@ -30,6 +31,7 @@ body {
   text-transform: uppercase;
   overflow-x: hidden;
 }
+
 .intro {
   position: relative;
   height: 1000px;
@@ -75,6 +77,10 @@ body {
   font-size: 1.5rem;
 }
 
+.showreel {
+  height: 650px;
+  padding-top: 25px;
+}
 .projects > img {
   max-height: 250px;
   width: auto;
@@ -101,7 +107,6 @@ body {
   font-size: 36px;
   font-weight: bold;
   text-align: center;
-  padding-bottom: 10px;
 }
 .project-roles {
   font-size: 24px;
@@ -170,4 +175,14 @@ form input::placeholder {
 
 .message textarea::placeholder {
   text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  .header-text h1 {
+    font-size: 80px;
+  }
+  .showreel {
+    height: 250px;
+    padding-top: 0px;
+  }
 }
