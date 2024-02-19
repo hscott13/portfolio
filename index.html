@@ -65,6 +65,8 @@
                 <video  class="showreel" autoplay loop muted playsinline>
                     <source src="/images/stage02.mp4" type="video/mp4">
                 </video>
+              
+ 
         <div class="container project row my-5">
           <h3>Too Wong Foo</h3>
           <div class=" col project-info d-flex flex-column justify-content-end">
@@ -77,11 +79,10 @@
           </div>
 
           <div class="project-extra col d-flex flex-column align-items-center">
-            <div id="TWFcarousel" class="carousel slide" data-bs-ride="carousel">
-              
+            <div id="TWFcarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="7500">
-                  <img src="/images/TWF/twf3.jpg" class="d-block w-100" alt="...">
+                  <img src="/images/TWF/twf3.jpg" class="d-block w-100" alt="..."> 
                 </div>
                 <div class="carousel-item" data-bs-interval="7500">
                   <img src="/images/TWF/twf5.jpg" class="d-block w-100" alt="...">
@@ -107,7 +108,7 @@
           </div>
 
           <div class="col d-flex flex-column align-items-center">
-            <div id="SAcarousel" class="carousel slide" data-bs-ride="carousel">
+            <div id="SAcarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
               
               <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="7500">
@@ -148,7 +149,7 @@
           </div>
 
           <div class="project-extra col d-flex flex-column align-items-center">
-            <div id="NCLcarousel" class="carousel slide" data-bs-ride="carousel">
+            <div id="NCLcarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
              
               <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="7500">
@@ -183,7 +184,7 @@
           </div>
 
           <div class="project-extra col d-flex flex-column align-items-center">
-            <div id="MScarousel" class="carousel slide justify-content-center" data-bs-ride="carousel">
+            <div id="MScarousel" class="carousel slide  carousel-fade" data-bs-ride="carousel">
               
               <div class="carousel-inner d-flex align-items-center">
                 <div class="carousel-item active" data-bs-interval="7500">
@@ -212,7 +213,7 @@
           </div>
 
           <div class="project-extra col d-flex flex-column align-items-center">
-            <div id="WOZcarousel" class="carousel slide justify-content-center" data-bs-ride="carousel">
+            <div id="WOZcarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
               
               <div class="carousel-inner d-flex align-items-center">
                 <div class="carousel-item active" data-bs-interval="7500">
@@ -243,7 +244,7 @@
             </p>
           </div>
           <div class="project-extra col d-flex flex-column align-items-center">
-            <div id="TTWcarousel" class="carousel slide" data-bs-ride="carousel">
+            <div id="TTWcarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
               
               <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="7500">
@@ -271,7 +272,7 @@
             </p>
           </div>
           <div class="project-extra col d-flex flex-column align-items-center">
-            <div id="Bcarousel" class="carousel slide" data-bs-ride="carousel">
+            <div id="Bcarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
               
               <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="7500">
@@ -562,7 +563,10 @@
                 offset: 5
             });
         });
-      
+      var carousel = new bootstrap.Carousel(document.getElementById('TWFcarousel'), {
+    interval: 2000, // Set the interval for transitioning between items
+    pause: 'hover' // Pause the carousel on mouse hover
+  });
     </script>
   </body>
 </html>
